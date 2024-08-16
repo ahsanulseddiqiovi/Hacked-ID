@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hacked-terminal {
+    width: 100%;
+    max-width: 900px;
+    height: 80%;
+    border: 2px solid lime;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+    overflow: hidden;
+    position: relative;
+    background: black;
+}
+
+.scrolling-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    white-space: pre-wrap;
+    animation: scroll-up 15s linear infinite;
+}
+
+@keyframes scroll-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+p {
+    margin: 0;
+    line-height: 1.5;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hacked-message {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.hacked-message p {
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    font-size: 24px;
+    color: lime;
+    text-shadow: 0 0 10px lime;
+    animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hacked-screen {
+    width: 80%;
+    max-width: 900px;
+    height: 80%;
+    border: 2px solid lime;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.alert-box {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 10;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.scrolling-messages {
+    position: absolute;
+    top: 100px; /* Adjust if needed */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.message {
+    animation: scroll-up 10s linear infinite;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.message p {
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.alert-container {
+    width: 80%;
+    max-width: 800px;
+    border: 2px solid red;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.alert-message {
+    position: relative;
+    z-index: 1;
+    white-space: pre-wrap;
+}
+
+.scrolling-bar {
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    height: 5px;
+    width: 100%;
+    background: red;
+    animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hacking-screen {
+    width: 80%;
+    max-width: 900px;
+    height: 80%;
+    border: 2px solid lime;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+    overflow: hidden;
+    position: relative;
+    background: black;
+}
+
+.scrolling-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    animation: scroll 15s linear infinite;
+}
+
+.scrolling-text p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
